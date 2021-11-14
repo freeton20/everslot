@@ -1,0 +1,14 @@
+.idea
+package-lock.json
+node_modules
+bower_components
+info
+*.log
+dist
+*.keys.json
+*.tvc
+*sh
+*SafeMultisig*
+*Wallet.sol
+*Marvin*
+*local_giver*

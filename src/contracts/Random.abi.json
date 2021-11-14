@@ -1,0 +1,91 @@
+{
+	"ABI version": 2,
+	"version": "2.2",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "getNums",
+			"inputs": [
+				{"name":"a","type":"address"}
+			],
+			"outputs": [
+				{"components":[{"name":"f","type":"uint8"},{"name":"s","type":"uint8"},{"name":"t","type":"uint8"}],"name":"value0","type":"tuple"}
+			]
+		},
+		{
+			"name": "getrandom",
+			"inputs": [
+				{"name":"a","type":"address"}
+			],
+			"outputs": [
+				{"name":"value0","type":"uint8"},
+				{"name":"value1","type":"uint8"},
+				{"name":"value2","type":"uint8"}
+			]
+		},
+		{
+			"name": "calculateAmount",
+			"inputs": [
+				{"name":"first","type":"uint256"},
+				{"name":"second","type":"uint256"},
+				{"name":"third","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"value0","type":"uint128"}
+			]
+		},
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "line",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"line","type":"uint128"}
+			]
+		},
+		{
+			"name": "f",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"f","type":"uint8"}
+			]
+		},
+		{
+			"name": "s",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"s","type":"uint8"}
+			]
+		},
+		{
+			"name": "t",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"t","type":"uint8"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"line","type":"uint128"},
+		{"name":"f","type":"uint8"},
+		{"name":"s","type":"uint8"},
+		{"name":"t","type":"uint8"},
+		{"components":[{"name":"f","type":"uint8"},{"name":"s","type":"uint8"},{"name":"t","type":"uint8"}],"name":"DB","type":"map(address,tuple)"}
+	]
+}

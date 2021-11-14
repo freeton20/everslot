@@ -1,0 +1,111 @@
+html {
+    font-size: 18px;
+}
+
+html, body, #slot {
+    height: 100%;
+}
+
+#bar {
+    height: 2rem;
+}
+
+#slot {
+    background-color: rgba(24, 18, 17, 0.87);
+    margin: 0;
+    border: 1px solid gray;
+    border-bottom: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+#numbers {
+    display: flex;
+    color: white;
+}
+
+#numbers div {
+    width: 33%;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#play {
+    margin-top: 80px;
+    text-align: center;
+}
+
+button {
+    width: 10rem;
+    height: 3.5rem;
+}
+
+#play > button {
+    font-size: 2rem;
+}
+
+#log {
+    text-align: center;
+    color: white;
+}
+
+.slotwrapper {
+    overflow: hidden;
+    display: inline-block;
+    height: 200px;
+}
+
+.slotwrapper ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    float: left;
+}
+
+#numbers > ul:nth-child(3) {
+    border-right: 0;
+}
+
+.slotwrapper ul {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    font-size: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.slotwrapper ul li img {
+    vertical-align: top;
+}
+
+@media screen and (max-width: 1200px) {
+    .slotwrapper {
+        width: 100%;
+    }
+
+    .slotwrapper ul {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slotwrapper {
+        height: 100px;
+    }
+
+    .slotwrapper ul {
+        height: 100px;
+        font-size: 100px;
+        line-height: 100px;
+    }
+}
+
+#fees, #timer{
+    margin-top: 1rem;
+}
+
+#info{
+    color: white;
+    text-align: center;
+}
