@@ -16,7 +16,7 @@ contract Random {
     }
 
     function getrandom(address a) public {
-       require(msg.value > 1e8, 100, "message without amount is blocked");       
+       require(msg.value >= 1e9, 100, "message without amount is blocked");       
        tvm.accept();//0.007377001 - плата за одну рандомную генерацию
        rnd.shuffle(tx.timestamp + now);       
        uint8 first = rnd.next(9)+1;
@@ -28,7 +28,7 @@ contract Random {
        if(value > 0){       
            prize(msg.sender, value);           
        }
-              
+
        rand r = rand(first, second, third);
        DB[a] = r;
     }
