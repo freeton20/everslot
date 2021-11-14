@@ -9,6 +9,6 @@ dist
 *.tvc
 *sh
 *SafeMultisig*
-*Wallet.sol
+*Wallet*
 *Marvin*
 *local_giver*
