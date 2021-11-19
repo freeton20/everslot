@@ -32,9 +32,9 @@ $('#playButton').click(async function () {
 });
 
 function checkResult(f, s, t) {
-    if (f == s || s == t) {
-        return 'WIN!!!';
+    if (f == s || s == t || f == t) {
+        return '<span style="font-size: 1.2rem">WIN!!! 😀 GRAB AND GO!</span>';
     }
 
-    return 'LOSS. TRY AGAIN.'
+    return '<span style="font-size: 1.2rem">LOSS. 😿 TRY AGAIN.</span>'
 }

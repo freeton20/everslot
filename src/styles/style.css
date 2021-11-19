@@ -30,7 +30,7 @@ html, body, #slot {
 }
 
 #play {
-    margin-top: 80px;
+    margin-top: 130px;
     text-align: center;
 }
 
@@ -51,7 +51,7 @@ button {
 .slotwrapper {
     overflow: hidden;
     display: inline-block;
-    height: 200px;
+    height: 250px;
 }
 
 .slotwrapper ul {
@@ -69,9 +69,9 @@ button {
 .slotwrapper ul {
     margin: 0 auto;
     width: 200px;
-    height: 200px;
-    font-size: 200px;
-    line-height: 200px;
+    height: 250px;
+    font-size: 180px;
+    line-height: 250px;
     text-align: center;
 }
 

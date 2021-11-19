@@ -23,14 +23,13 @@ contract Random {
        uint8 second = rnd.next(9)+1;
        uint8 third = rnd.next(9)+1;
 
-       uint128 value = calculateAmount(first, second, third);
+       uint128 value = calculateAmount(first, second, third);    
        
+       DB[a] = rand(first, second, third);
+
        if(value > 0){       
            prize(msg.sender, value);           
        }
-
-       rand r = rand(first, second, third);
-       DB[a] = r;
     }
 
     function prize(address dest, uint128 value) private pure {
@@ -44,7 +43,7 @@ contract Random {
         }
       
         if( first == second || second == third || first == third){
-            return 1e10-1e9;
+            return 1e10-2e9;
         }
 
         return 0;
