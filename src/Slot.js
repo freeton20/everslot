@@ -14,8 +14,7 @@ $('#playButton').click(async function () {
         }
     });
 
-    $('#playButton').attr('disabled', true);
-    const startTime = performance.now();
+    $('#playButton').attr('disabled', true);   
 
     extraton.initExtraton().then(r => {
         if (r == false) {

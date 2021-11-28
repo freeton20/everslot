@@ -17,7 +17,7 @@ if (typeof client == 'undefined') {
         }
     });
 }
-const contract = "0:7ed41f9523a358487ef923f7c6e61f85b47f8d5d63611f3f59091c0fbb7968de";//Random.sol contract
+const contract = "0:6c3900c805f28d861810bc1f18c08d1348db19ba5eb69ff6cf5ea7674b379ba5";//Random.sol contract
 
 async function getPayload(a) {
     const response = await client.abi.encode_message_body(
